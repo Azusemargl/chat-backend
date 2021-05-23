@@ -10,7 +10,7 @@ export const messageCreation = async (req: Request, res: Response) => {
 
       await content.save()
 
-      return res.json({ message: 'Message was added' })
+      return res.json({ content })
    } catch(e) {
       console.log(`Error: ${e}`)
    }
